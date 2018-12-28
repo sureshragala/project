@@ -1,0 +1,4 @@
+com\spmu\noduesmanagement\services\UserService.class
+com\spmu\noduesmanagement\utils\HibernateUtils.class
+com\spmu\noduesmanagement\App.class
+com\spmu\noduesmanagement\entities\User.class

@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+ 	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	<property name="hibernate.connection.url">jdbc:oracle:thin:@10.15.2.47:1521:cmsdb1</property>
+	<property name="hibernate.connection.username">cms_offair</property>
+	<property name="hibernate.connection.password">cms_1</property>
+	<property name="hibernate.default_schema">cms_offair</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+	
+	<property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">create</property>
+      
+    <!-- List of entity mappings -->
+    <!--  <mapping package="com.spmu.noduesmanagement.entities"/>  -->
+	<mapping class="com.spmu.noduesmanagement.entities.User" />
+					
+      
+   </session-factory>
+</hibernate-configuration>
